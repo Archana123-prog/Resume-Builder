@@ -8,6 +8,8 @@ const TEMPLATES = [
   { id: 'bold', label: 'Bold', color: '#dc2626' },
   { id: 'elegant', label: 'Elegant', color: '#7c3aed' },
   { id: 'professional', label: 'Professional', color: '#059669' },
+  { id: 'corporate', label: 'Corporate', color: '#0f5bb0' },
+  { id: 'consultant', label: 'Consultant', color: '#236b33' },
   { id: 'creative', label: 'Creative', color: '#f59e0b' },
   { id: 'tech', label: 'Tech', color: '#0891b2' },
   { id: 'executive', label: 'Executive', color: '#7c2d12' },

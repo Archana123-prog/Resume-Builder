@@ -547,6 +547,176 @@ export default function ResumePreview({ data, template, fullscreen }) {
           </div>
         )}
 
+        {/* CORPORATE TEMPLATE */}
+        {template === 'corporate' && (
+          <div className="corporate-layout">
+            <div className="corporate-header">
+              <div>
+                <h1>{personal.name || 'Your Name'}</h1>
+                <p className="corporate-title">{personal.title || 'Corporate Leader'}</p>
+                <div className="corporate-contact">{[personal.email, personal.phone, personal.location, personal.website].filter(Boolean).join(' | ')}</div>
+              </div>
+              {personal.photo && <img src={personal.photo} alt={personal.name} className="corporate-photo" />}
+            </div>
+            {personal.summary && (
+              <div className="corporate-summary">
+                <p>{personal.summary}</p>
+              </div>
+            )}
+            <div className="corporate-grid">
+              <div className="corporate-main">
+                {hasContent(experience) && (
+                  <div className="corporate-section">
+                    <h2>Experience</h2>
+                    {experience.map(exp => exp.company && (
+                      <div key={exp.id} className="corporate-entry">
+                        <div className="corporate-entry-header">
+                          <div>
+                            <div className="corporate-role">{exp.role}</div>
+                            <div className="corporate-company">{exp.company}</div>
+                          </div>
+                          <div className="corporate-dates">{exp.startDate}{exp.startDate && (exp.endDate || exp.current) ? ' – ' : ''}{exp.current ? 'Present' : exp.endDate}</div>
+                        </div>
+                        {exp.description && <ul className="corporate-bullets">{formatDesc(exp.description)}</ul>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {hasContent(projects) && (
+                  <div className="corporate-section">
+                    <h2>Key Projects</h2>
+                    {projects.map(proj => proj.name && (
+                      <div key={proj.id} className="corporate-project-item">
+                        <div className="corporate-project-name">{proj.name}</div>
+                        {proj.tech && <div className="corporate-project-tech">{proj.tech}</div>}
+                        {proj.description && <p className="corporate-project-desc">{proj.description}</p>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <aside className="corporate-side">
+                {hasContent(education) && (
+                  <div className="corporate-section">
+                    <h2>Education</h2>
+                    {education.map(edu => edu.institution && (
+                      <div key={edu.id} className="corporate-edu-item">
+                        <div className="corporate-edu-degree">{edu.degree}{edu.field ? ` in ${edu.field}` : ''}</div>
+                        <div className="corporate-edu-school">{edu.institution}</div>
+                        <div className="corporate-edu-dates">{edu.startDate}{edu.startDate && edu.endDate ? ' – ' : ''}{edu.endDate}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {hasContent(skills) && (
+                  <div className="corporate-section">
+                    <h2>Skills</h2>
+                    {skills.map(s => s.items && (
+                      <div key={s.id} className="corporate-skill-group">
+                        {s.category && <div className="corporate-skill-category">{s.category}</div>}
+                        <div className="corporate-skill-list">{s.items.split(',').map((sk, i) => (<span key={i} className="corporate-skill-item">{sk.trim()}</span>))}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {hasContent(certifications) && (
+                  <div className="corporate-section">
+                    <h2>Certifications</h2>
+                    {certifications.map(c => c.name && (
+                      <div key={c.id} className="corporate-cert-item">
+                        <div className="corporate-cert-name">{c.name}</div>
+                        <div className="corporate-cert-issuer">{c.issuer}</div>
+                        <div className="corporate-cert-date">{c.date}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </aside>
+            </div>
+          </div>
+        )}
+
+        {/* CONSULTANT TEMPLATE */}
+        {template === 'consultant' && (
+          <div className="consultant-layout">
+            <div className="consultant-top">
+              <h1 className="consultant-name">{personal.name || 'Your Name'}</h1>
+              <p className="consultant-title">{personal.title || 'Consultant'}</p>
+              <div className="consultant-contact">{[personal.email, personal.phone, personal.location, personal.linkedin].filter(Boolean).join(' • ')}</div>
+            </div>
+            {personal.summary && (
+              <div className="consultant-summary"><p>{personal.summary}</p></div>
+            )}
+            <div className="consultant-body">
+              <div className="consultant-left">
+                {hasContent(experience) && (
+                  <div className="consultant-section">
+                    <h2>Professional Experience</h2>
+                    {experience.map(exp => exp.company && (
+                      <div key={exp.id} className="consultant-entry">
+                        <div className="consultant-entry-header">
+                          <div className="consultant-role">{exp.role}</div>
+                          <div className="consultant-dates">{exp.startDate}{exp.startDate && (exp.endDate || exp.current) ? ' – ' : ''}{exp.current ? 'Present' : exp.endDate}</div>
+                        </div>
+                        <div className="consultant-company">{exp.company}</div>
+                        {exp.description && <ul className="consultant-bullets">{formatDesc(exp.description)}</ul>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {hasContent(projects) && (
+                  <div className="consultant-section">
+                    <h2>Selected Projects</h2>
+                    {projects.map(proj => proj.name && (
+                      <div key={proj.id} className="consultant-project">
+                        <div className="consultant-project-name">{proj.name}</div>
+                        <div className="consultant-project-tech">{proj.tech}</div>
+                        {proj.description && <p className="consultant-project-desc">{proj.description}</p>}
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+              <aside className="consultant-right">
+                {hasContent(skills) && (
+                  <div className="consultant-section">
+                    <h2>Skills</h2>
+                    {skills.map(s => s.items && (
+                      <div key={s.id} className="consultant-skill-group">
+                        {s.category && <div className="consultant-skill-category">{s.category}</div>}
+                        <div className="consultant-skill-list">{s.items.split(',').map((sk, i) => (<span key={i} className="consultant-skill-item">{sk.trim()}</span>))}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {hasContent(education) && (
+                  <div className="consultant-section">
+                    <h2>Education</h2>
+                    {education.map(edu => edu.institution && (
+                      <div key={edu.id} className="consultant-edu-item">
+                        <div className="consultant-edu-degree">{edu.degree}{edu.field ? `, ${edu.field}` : ''}</div>
+                        <div className="consultant-edu-school">{edu.institution}</div>
+                        <div className="consultant-edu-dates">{edu.startDate}{edu.startDate && edu.endDate ? ' – ' : ''}{edu.endDate}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+                {hasContent(certifications) && (
+                  <div className="consultant-section">
+                    <h2>Certifications</h2>
+                    {certifications.map(c => c.name && (
+                      <div key={c.id} className="consultant-cert-item">
+                        <div className="consultant-cert-name">{c.name}</div>
+                        <div className="consultant-cert-details">{c.issuer} • {c.date}</div>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </aside>
+            </div>
+          </div>
+        )}
+
         {/* CREATIVE TEMPLATE */}
         {template === 'creative' && (
           <div className="creative-layout">

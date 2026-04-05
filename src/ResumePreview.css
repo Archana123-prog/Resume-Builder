@@ -231,6 +231,239 @@
 .professional-cert-date { font-size: 12px; color: #a0aec0; }
 
 /* ════════════════════════════════════════
+   CORPORATE TEMPLATE
+════════════════════════════════════════ */
+.template-corporate .resume-page {
+  font-family: 'Lato', sans-serif;
+  color: #1f2937;
+}
+.corporate-layout {
+  padding: 32px;
+  min-height: 297mm;
+}
+.corporate-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  margin-bottom: 24px;
+}
+.corporate-title {
+  font-size: 1rem;
+  color: #0f4f8b;
+  margin-top: 6px;
+}
+.corporate-contact {
+  font-size: 0.82rem;
+  color: #475569;
+  margin-top: 10px;
+}
+.corporate-photo {
+  width: 82px;
+  height: 82px;
+  object-fit: cover;
+  border-radius: 16px;
+  border: 2px solid #dbeafe;
+}
+.corporate-summary {
+  background: #eff6ff;
+  border-left: 5px solid #0f4f8b;
+  padding: 20px;
+  margin-bottom: 24px;
+}
+.corporate-grid {
+  display: grid;
+  grid-template-columns: 1.7fr 1fr;
+  gap: 24px;
+}
+.corporate-main,
+.corporate-side {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.corporate-section h2 {
+  margin-bottom: 12px;
+  color: #0f4f8b;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.corporate-entry {
+  margin-bottom: 18px;
+}
+.corporate-entry-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+.corporate-role {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+}
+.corporate-company,
+.corporate-dates {
+  color: #475569;
+  font-size: 0.82rem;
+}
+.corporate-bullets {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #334155;
+}
+.corporate-project-item {
+  margin-bottom: 18px;
+}
+.corporate-project-name {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #0f4f8b;
+  margin-bottom: 4px;
+}
+.corporate-project-tech {
+  font-size: 0.82rem;
+  color: #475569;
+  margin-bottom: 8px;
+}
+.corporate-project-desc {
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.5;
+}
+.corporate-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.corporate-skill-item {
+  background: #eff6ff;
+  color: #0f4f8b;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+.corporate-cert-item {
+  margin-bottom: 14px;
+}
+.corporate-cert-name {
+  font-weight: 700;
+  color: #111827;
+}
+.corporate-cert-issuer,
+.corporate-cert-date {
+  color: #475569;
+  font-size: 0.82rem;
+}
+
+/* ════════════════════════════════════════
+   CONSULTANT TEMPLATE
+════════════════════════════════════════ */
+.template-consultant .resume-page {
+  font-family: 'DM Sans', sans-serif;
+  color: #111827;
+}
+.consultant-layout {
+  padding: 32px;
+  min-height: 297mm;
+}
+.consultant-top {
+  margin-bottom: 24px;
+}
+.consultant-name {
+  font-size: 2.1rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+.consultant-title {
+  font-size: 1rem;
+  color: #0f766e;
+  margin-bottom: 10px;
+}
+.consultant-contact {
+  font-size: 0.82rem;
+  color: #475569;
+}
+.consultant-summary {
+  margin-bottom: 24px;
+  color: #334155;
+}
+.consultant-body {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 24px;
+}
+.consultant-section h2 {
+  margin-bottom: 12px;
+  color: #0f766e;
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+}
+.consultant-entry {
+  margin-bottom: 20px;
+}
+.consultant-entry-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: flex-start;
+}
+.consultant-role {
+  font-weight: 700;
+  color: #111827;
+}
+.consultant-company,
+.consultant-dates {
+  color: #475569;
+  font-size: 0.82rem;
+}
+.consultant-bullets {
+  list-style-type: disc;
+  margin-left: 20px;
+  color: #334155;
+}
+.consultant-project {
+  margin-bottom: 18px;
+}
+.consultant-project-name {
+  font-weight: 700;
+  color: #0f766e;
+  margin-bottom: 4px;
+}
+.consultant-project-tech {
+  color: #475569;
+  font-size: 0.82rem;
+  margin-bottom: 8px;
+}
+.consultant-project-desc {
+  color: #334155;
+  line-height: 1.5;
+}
+.consultant-skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.consultant-skill-item {
+  background: #d9f5ef;
+  color: #0f766e;
+  padding: 6px 10px;
+  border-radius: 999px;
+  font-size: 0.78rem;
+}
+.consultant-edu-item,
+.consultant-cert-item {
+  margin-bottom: 16px;
+}
+.consultant-cert-details {
+  color: #475569;
+  font-size: 0.82rem;
+}
+
+/* ════════════════════════════════════════
    CREATIVE TEMPLATE
 ════════════════════════════════════════ */
 .template-creative .resume-page {
