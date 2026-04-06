@@ -3,7 +3,10 @@ import { GoogleGenerativeAI } from '@google/generative-ai';
 const API_KEY = process.env.REACT_APP_GEMINI_API_KEY;
 
 if (!API_KEY) {
-  console.error('❌ REACT_APP_GEMINI_API_KEY is not set in .env file');
+  console.error('❌ REACT_APP_GEMINI_API_KEY is not set. Make sure your .env file is in the project root (resume-builder/.env) and contains: REACT_APP_GEMINI_API_KEY=your_key_here');
+  console.error('💡 After updating .env, restart the dev server (npm start).');
+} else {
+  console.log('✅ Gemini API key loaded successfully');
 }
 
 const genAI = new GoogleGenerativeAI(API_KEY);

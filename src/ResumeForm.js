@@ -5,15 +5,8 @@ const TEMPLATES = [
   { id: 'modern', label: 'Modern', color: '#2563eb' },
   { id: 'classic', label: 'Classic', color: '#1a1a1a' },
   { id: 'minimal', label: 'Minimal', color: '#6b7280' },
-  { id: 'bold', label: 'Bold', color: '#dc2626' },
   { id: 'elegant', label: 'Elegant', color: '#7c3aed' },
   { id: 'professional', label: 'Professional', color: '#059669' },
-  { id: 'corporate', label: 'Corporate', color: '#0f5bb0' },
-  { id: 'consultant', label: 'Consultant', color: '#236b33' },
-  { id: 'creative', label: 'Creative', color: '#f59e0b' },
-  { id: 'tech', label: 'Tech', color: '#0891b2' },
-  { id: 'executive', label: 'Executive', color: '#7c2d12' },
-  { id: 'simple', label: 'Simple', color: '#64748b' },
 ];
 
 const SECTIONS = ['Personal', 'Experience', 'Education', 'Skills', 'Projects', 'Certifications'];
