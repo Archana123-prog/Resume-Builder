@@ -1,70 +1,126 @@
-# Getting Started with Create React App
+# 🚀 ResumeForge — AI Resume Builder
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+ResumeForge is a modern, user-friendly resume builder that allows users to create, customize, preview, and export professional resumes in real-time.
 
-## Available Scripts
+Designed with a clean UI and multiple templates, ResumeForge helps users build ATS-friendly resumes quickly and efficiently.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## ✨ Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- 🎨 Multiple Resume Templates  
+  - Modern  
+  - Classic  
+  - Minimal  
+  - Elegant  
+  - Professional  
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🧑 Personal Information Editor  
+  - Name, Email, Phone, Location  
+  - Profile Image Upload  
 
-### `npm test`
+- 💼 Sections Included  
+  - Summary  
+  - Experience  
+  - Education  
+  - Skills  
+  - Projects  
+  - Certifications  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- ⚡ Live Preview  
+  - Real-time resume updates  
+  - Instant visual feedback  
 
-### `npm run build`
+- 📄 Export to PDF  
+  - One-click download  
+  - Print-ready format  
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- 🔗 Project Links  
+  - Add GitHub / Live project URLs  
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🖼️ UI Preview
 
-### `npm run eject`
+### 🧾 Resume Editor
+![Editor](./assets/editor.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### 📄 Resume Preview
+![Preview](./assets/preview.png)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### 📤 Export PDF
+![Export](./assets/export.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+---
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## 🛠️ Tech Stack
 
-## Learn More
+- **Frontend:** React.js  
+- **Styling:** CSS / Tailwind  
+- **State Management:** React Hooks  
+- **PDF Generation:** Browser Print API / jsPDF  
+- **Deployment:** Vercel  
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## ⚙️ Installation & Setup
 
-### Code Splitting
+```bash
+# Clone the repository
+git clone https://github.com/your-username/resumeforge.git
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+# Navigate to project folder
+cd resumeforge
 
-### Analyzing the Bundle Size
+# Install dependencies
+npm install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+# Start development server
+npm run dev
+🌐 Live Demo
 
-### Making a Progressive Web App
+👉 https://your-live-link.vercel.app
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+📁 Project Structure
+resumeforge/
+│── src/
+│   ├── components/
+│   ├── pages/
+│   ├── templates/
+│   ├── styles/
+│   └── utils/
+│
+│── public/
+│── package.json
+│── README.md
+🎯 Key Highlights
+Clean and modern UI/UX
+Fully responsive design
+Real-time preview system
+Easy-to-use form-based editing
+Professional resume layouts
+🚀 Future Improvements
+🤖 AI-based resume suggestions
+📊 ATS score checker
+🌍 Multi-language support
+☁️ Cloud save feature
+🎨 Custom theme builder
+🤝 Contributing
 
-### Advanced Configuration
+Contributions are welcome!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Fork the repository
+Create a new branch
+Make your changes
+Submit a pull request
+📜 License
 
-### Deployment
+This project is licensed under the MIT License.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+👤 Author
 
-### `npm run build` fails to minify
+Aarav Kumar
+📧 aarav12y@gmail.com
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+📍 Bengaluru
+🔗 https://github.com/aarav12e
