@@ -43,13 +43,17 @@ Designed with a clean UI and multiple templates, ResumeForge helps users build A
 ## 🖼️ UI Preview
 
 ### 🧾 Resume Editor
-![Editor](./assets/editor.png)
+<img width="1919" height="919" alt="Screenshot 2026-04-12 233928" src="https://github.com/user-attachments/assets/a4d6da3d-d4ea-43f0-bc28-89a86c076fe9" />
+<img width="1919" height="926" alt="Screenshot 2026-04-12 235003" src="https://github.com/user-attachments/assets/229afe06-79b6-4b03-a61b-b3609e8e931d" />
 
 ### 📄 Resume Preview
-![Preview](./assets/preview.png)
+
+<img width="1914" height="549" alt="Screenshot 2026-04-12 234214" src="https://github.com/user-attachments/assets/53775d23-e4ce-43ce-a981-5943ccf3f427" />
+<img width="1915" height="931" alt="Screenshot 2026-04-12 235222" src="https://github.com/user-attachments/assets/9e059e5b-76de-4995-9c2a-18f918e643ec" />
 
 ### 📤 Export PDF
-![Export](./assets/export.png)
+<img width="1919" height="925" alt="Screenshot 2026-04-12 235317" src="https://github.com/user-attachments/assets/9362ca73-f77f-4370-bbe2-10a235249ce0" />
+<img width="1919" height="974" alt="Screenshot 2026-04-12 235347" src="https://github.com/user-attachments/assets/87b3980a-4338-482e-908d-237f388618e2" />
 
 ---
 
