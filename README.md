@@ -123,8 +123,7 @@ This project is licensed under the MIT License.
 
 👤 Author
 
-Aarav Kumar
-📧 aarav12y@gmail.com
-
-📍 Bengaluru
-🔗 https://github.com/aarav12e
+Archana Kumari
+📧 Archana12f@gmail.com
+📍 India
+🔗 [https://github.com/aarav12e](https://github.com/Archana123-prog/Resume-Builder)
