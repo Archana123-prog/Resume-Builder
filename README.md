@@ -4,7 +4,6 @@ ResumeForge is a modern, user-friendly resume builder that allows users to creat
 
 Designed with a clean UI and multiple templates, ResumeForge helps users build ATS-friendly resumes quickly and efficiently.
 
----
 
 ## ✨ Features
 
@@ -38,7 +37,6 @@ Designed with a clean UI and multiple templates, ResumeForge helps users build A
 - 🔗 Project Links  
   - Add GitHub / Live project URLs  
 
----
 
 ## 🖼️ UI Preview
 
@@ -55,7 +53,6 @@ Designed with a clean UI and multiple templates, ResumeForge helps users build A
 <img width="1919" height="925" alt="Screenshot 2026-04-12 235317" src="https://github.com/user-attachments/assets/9362ca73-f77f-4370-bbe2-10a235249ce0" />
 <img width="1919" height="974" alt="Screenshot 2026-04-12 235347" src="https://github.com/user-attachments/assets/87b3980a-4338-482e-908d-237f388618e2" />
 
----
 
 ## 🛠️ Tech Stack
 
@@ -65,7 +62,6 @@ Designed with a clean UI and multiple templates, ResumeForge helps users build A
 - **PDF Generation:** Browser Print API / jsPDF  
 - **Deployment:** Vercel  
 
----
 
 ## ⚙️ Installation & Setup
 
